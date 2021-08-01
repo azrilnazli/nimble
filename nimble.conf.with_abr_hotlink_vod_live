@@ -1,0 +1,211 @@
+{
+  "SyncResponse": {
+    "status": "success",
+    "StreamCheckerMode": false,
+    "UniqueVisitors": false,
+    "RoutesHash": "1627648024256",
+    "Routes": [
+      {
+        "host": "",
+        "path": "/vod/",
+        "origin": "file:///var/videos/",
+        "origin_path": "/",
+        "use_ssl": "false",
+        "geo": "",
+        "range": ""
+      }
+    ],
+    "IpRanges": [],
+    "ServerAuthorizationProperties": {
+      "ServerAuthPropertiesHash": "1627824548840",
+      "AuthRule": [
+        {
+          "WmsAuthGroupId": "610143c345475e7600314562",
+          "VHostName": "",
+          "AppName": "live",
+          "StreamName": "",
+          "MaxConnectionCount": 0,
+          "MaxBandwidth": 0,
+          "AllowPreferred": false,
+          "WmsAuth": {
+            "TimeTolerance": 60,
+            "Password": "password",
+            "Protocols": [
+         
+              "HLS",
+      
+            ]
+          }
+        },
+        {
+          "WmsAuthGroupId": "610143c345475e7600314562",
+          "VHostName": "",
+          "AppName": "vod",
+          "StreamName": "",
+          "MaxConnectionCount": 0,
+          "MaxBandwidth": 0,
+          "AllowPreferred": false,
+          "WmsAuth": {
+            "TimeTolerance": 60,
+            "Password": "password",
+            "Protocols": [
+              "HLS",
+            ]
+          }
+        }
+      ]
+    },
+    "CamerasHash": "",
+    "Cameras": [],
+    "StreamsHash": "",
+    "Streams": [],
+    "RtmpSettings": {
+      "hash": "1627823424271",
+      "interfaces": [
+        {
+          "ip": "*",
+          "port": 1935,
+          "ssl": false
+        }
+      ],
+      "login": "user",
+      "password": "password",
+      "duration": 6,
+      "chunk_count": 4,
+      "dash_template": "TIME",
+      "protocols": [
+        "HLS",
+        "RTMP"
+      ],
+      "apps": [
+        {
+          "app": "live",
+          "login": "user",
+          "password": "password",
+          "duration": 6,
+          "chunk_count": 4,
+          "dash_template": "TIME",
+          "protocols": [
+            "HLS",
+            "RTMP",
+            "SLDP"
+          ]
+        }
+      ],
+      "abr": [
+        {
+          "app": "live_abr",
+          "stream": "",
+          "order": "DESC",
+          "streams": [
+            {
+              "app": "live",
+              "stream": "{STREAM}_240p"
+            },
+            {
+              "app": "live",
+              "stream": "{STREAM}_360p"
+            },
+            {
+              "app": "live",
+              "stream": "{STREAM}_480p"
+            }
+          ]
+        }
+      ]
+    },
+    "RtspSettings": {
+      "hash": "",
+      "interfaces": []
+    },
+    "IcecastSettings": {
+      "hash": "",
+      "interfaces": []
+    },
+    "LivePullSettings": {
+      "hash": "",
+      "streams": []
+    },
+    "RtmpPublishSettings": {
+      "hash": "",
+      "settings": []
+    },
+    "RtspPublishSettings": {
+      "hash": "",
+      "settings": []
+    },
+    "ManagedTasks": {
+      "hash": "0",
+      "tasks": []
+    },
+    "HlsDRMSettings": {
+      "hash": "0",
+      "url": "",
+      "key": "",
+      "KeyServerSettings": {}
+    },
+    "HttpOriginApps": {
+      "hash": "0",
+      "apps": []
+    },
+    "Aliases": {
+      "hash": "0",
+      "settings": []
+    },
+    "DataSlicesInfo": {
+      "hash": "1",
+      "data_slices": [
+        {
+          "id": "67493",
+          "tz": 0
+        }
+      ]
+    },
+    "UDPSenderSettings": {
+      "hash": "0",
+      "settings": []
+    },
+    "PayPerPublishSettings": {
+      "hash": "0",
+      "url": "",
+      "auth_group_interval": 500,
+      "apps": []
+    },
+    "DvrSettings": {
+      "hash": "0",
+      "settings": []
+    },
+    "UserAgentGroupSettings": {
+      "hash": "1627824548840",
+      "settings": []
+    },
+    "RefererGroupSettings": {
+      "hash": "1627824548840",
+      "settings": []
+    },
+    "VideoEncodersInfo": {
+      "hash": "0",
+      "encoders": []
+    },
+    "AudioEncodersInfo": {
+      "hash": "0",
+      "encoders": []
+    },
+    "StreamOverrideSettings": {
+      "hash": "0",
+      "settings": []
+    },
+    "IcecastStreamSettings": {
+      "hash": "0",
+      "settings": []
+    },
+    "AuthHandlerSettings": {
+      "hash": ""
+    },
+    "ServerSettings": {
+      "MaxCacheSize": 64,
+      "MaxFileCacheSize": 4096,
+      "LogMode": "info"
+    }
+  }
+}
