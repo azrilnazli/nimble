@@ -17,12 +17,12 @@
     ],
     "IpRanges": [],
     "ServerAuthorizationProperties": {
-      "ServerAuthPropertiesHash": "1627824548840",
+      "ServerAuthPropertiesHash": "1627826712672",
       "AuthRule": [
         {
           "WmsAuthGroupId": "610143c345475e7600314562",
           "VHostName": "",
-          "AppName": "live",
+          "AppName": "live_abr",
           "StreamName": "",
           "MaxConnectionCount": 0,
           "MaxBandwidth": 0,
@@ -31,9 +31,17 @@
             "TimeTolerance": 60,
             "Password": "password",
             "Protocols": [
-         
+              "DASH",
               "HLS",
-      
+              "ICECAST",
+              "MPEGTS",
+              "PD",
+              "RTMP",
+              "RTSP",
+              "SAN",
+              "SLDP",
+              "SMOOTH",
+              "SRT"
             ]
           }
         },
@@ -49,7 +57,17 @@
             "TimeTolerance": 60,
             "Password": "password",
             "Protocols": [
+              "DASH",
               "HLS",
+              "ICECAST",
+              "MPEGTS",
+              "PD",
+              "RTMP",
+              "RTSP",
+              "SAN",
+              "SLDP",
+              "SMOOTH",
+              "SRT"
             ]
           }
         }
@@ -60,7 +78,7 @@
     "StreamsHash": "",
     "Streams": [],
     "RtmpSettings": {
-      "hash": "1627823424271",
+      "hash": "1627826438183",
       "interfaces": [
         {
           "ip": "*",
@@ -100,15 +118,15 @@
           "streams": [
             {
               "app": "live",
-              "stream": "{STREAM}_240p"
-            },
-            {
-              "app": "live",
-              "stream": "{STREAM}_360p"
-            },
-            {
-              "app": "live",
               "stream": "{STREAM}_480p"
+            },
+            {
+              "app": "live",
+              "stream": "{STREAM}_720p"
+            },
+            {
+              "app": "live",
+              "stream": "{STREAM}_1080p"
             }
           ]
         }
@@ -176,11 +194,11 @@
       "settings": []
     },
     "UserAgentGroupSettings": {
-      "hash": "1627824548840",
+      "hash": "1627826712672",
       "settings": []
     },
     "RefererGroupSettings": {
-      "hash": "1627824548840",
+      "hash": "1627826712672",
       "settings": []
     },
     "VideoEncodersInfo": {
